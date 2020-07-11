@@ -68,7 +68,7 @@ namespace Coderman
             if (!canvas.enabled || ApplicationStatus.IsPaused) return;
 
             if (_index == 0)
-                _isConfirming = key == _confirm[_index];
+                _isConfirming = _deny?.Length == 0 || key == _confirm[_index];
 
             if (_isConfirming)
             {

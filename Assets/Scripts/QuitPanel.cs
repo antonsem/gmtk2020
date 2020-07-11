@@ -29,7 +29,7 @@ namespace Coderman
                 }
             }
 
-            if (!Input.GetKeyDown(KeyCode.F10)) return;
+            if (!Input.GetKeyDown(KeyCode.F12)) return;
 
             canvas.enabled = !canvas.enabled;
             Events.Instance.exitStatus?.Invoke(canvas.enabled);

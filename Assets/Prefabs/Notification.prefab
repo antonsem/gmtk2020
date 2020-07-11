@@ -648,6 +648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeText: {fileID: 1094767929370572256}
   openText: {fileID: 4418141126735892294}
+  summary: {fileID: 6459577534101650980}
   openSlider: {fileID: 1213968691254908093}
   closeSlider: {fileID: 4509538763568112633}
 --- !u!1 &3886498739334230571

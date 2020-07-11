@@ -1,6 +1,5 @@
 ﻿using TMPro;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Coderman
 {
@@ -8,12 +7,15 @@ namespace Coderman
     {
         [SerializeField] private TextMeshProUGUI terminal;
         [SerializeField] private TextAsset[] codeSamples;
+        [SerializeField] private TextAsset[] randomSamples;
         [SerializeField] private int minTypeSpeed = 1;
         [SerializeField] private int maxTypeSpeed = 5;
 
         private string _currentString;
         private int _index = 0;
         private int _lineCount = 2;
+        private int _codeSampleIndex = 0;
+        private string _codeSampleName = "";
 
         #region Unity Methods
 
@@ -30,14 +32,28 @@ namespace Coderman
 
         private void Start()
         {
-            _currentString = GetASample();
+            _currentString = GetASample(0);
         }
 
         #endregion
 
-        private string GetASample()
+        private string GetASample(int sampleCount)
         {
-            return codeSamples[Random.Range(0, codeSamples.Length)].text;
+            if (sampleCount < 0)
+            {
+                _codeSampleName = "";
+                return randomSamples[Random.Range(0, randomSamples.Length - 1)].text;
+            }
+
+            if (sampleCount >= codeSamples.Length)
+            {
+                Debug.LogError("You are the best!");
+                Events.Instance.beatTheGame?.Invoke();
+                return "";
+            }
+
+            _codeSampleName = codeSamples[sampleCount].name;
+            return codeSamples[sampleCount].text;
         }
 
         private void GotKey(KeyCode key)
@@ -68,7 +84,8 @@ namespace Coderman
             if (_index < _currentString.Length - 1) return;
             _index = 0;
             _lineCount = 2;
-            _currentString = GetASample();
+            Events.Instance.doneWithCode?.Invoke(_codeSampleName);
+            _currentString = GetASample(ApplicationStatus.IsCareerActive ? ++_codeSampleIndex : -1);
         }
     }
 }

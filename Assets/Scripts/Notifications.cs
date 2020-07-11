@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Coderman
 {
@@ -20,26 +19,37 @@ namespace Coderman
 
         #region Unity Methods
 
+        private void OnEnable()
+        {
+            Events.Instance.pushNotification += SetNotification;
+        }
+
+        private void OnDisable()
+        {
+            if (ApplicationStatus.IsQuitting) return;
+            Events.Instance.pushNotification -= SetNotification;
+        }
+
         private void Update()
         {
-            if (ApplicationStatus.IsPaused) return;
+            if (ApplicationStatus.IsPaused || !ApplicationStatus.IsCareerActive) return;
 
             _nextNotificationTime -= Time.deltaTime;
             if (_nextNotificationTime > 0) return;
 
             _nextNotificationTime = Random.Range(minTime, maxTime);
-            SetNotification();
+            SetNotification(testPopup);
         }
 
         #endregion
 
-        private void SetNotification()
+        private void SetNotification(PopUpInfo info)
         {
             for (int i = 0; i < _notifications.Count; i++)
             {
                 if (_notifications[i].gameObject.activeSelf) continue;
                 _notifications[i].transform.SetAsLastSibling();
-                _notifications[i].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], testPopup);
+                _notifications[i].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], info);
                 _notifications[i].gameObject.SetActive(true);
                 return;
             }
@@ -49,7 +59,7 @@ namespace Coderman
 
             _notifications[_notifications.Count - 1]
                 .Init(_notifications.Count - 1, CloseNotification, OpenNotification);
-            _notifications[_notifications.Count - 1].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], testPopup);
+            _notifications[_notifications.Count - 1].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], info);
         }
 
         private void CloseNotification(int index)

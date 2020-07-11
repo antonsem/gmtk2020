@@ -6,19 +6,25 @@
       <e p="Assets" t="Include">
         <e p="CodeSamples" t="Include">
           <e p="BreakableTile.txt" t="Include" />
+          <e p="intro.txt" t="Include" />
+          <e p="testing.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="ApplicationStatus.cs" t="Include" />
+          <e p="BeatTheGamePanel.cs" t="Include" />
           <e p="CreditsPanel.cs" t="Include" />
           <e p="Events.cs" t="Include" />
           <e p="Extensions.cs" t="Include" />
+          <e p="GameOverPanel.cs" t="Include" />
           <e p="HelpPanel.cs" t="Include" />
           <e p="KeyboardInputHandler.cs" t="Include" />
+          <e p="NewCareerPanel.cs" t="Include" />
           <e p="Notification.cs" t="Include" />
           <e p="Notifications.cs" t="Include" />
           <e p="PopUp.cs" t="Include" />
           <e p="PopUpInfo.cs" t="Include" />
           <e p="PopupTerminal.cs" t="Include" />
+          <e p="ProgressionEvents.cs" t="Include" />
           <e p="QuitPanel.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="Terminal.cs" t="Include" />

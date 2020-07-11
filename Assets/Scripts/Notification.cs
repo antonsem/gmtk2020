@@ -10,6 +10,7 @@ namespace Coderman
     {
         [SerializeField] private TextMeshProUGUI closeText;
         [SerializeField] private TextMeshProUGUI openText;
+        [SerializeField] private TextMeshProUGUI summary;
         [SerializeField] private Slider openSlider;
         [SerializeField] private Slider closeSlider;
 
@@ -47,8 +48,13 @@ namespace Coderman
                 closeSlider.gameObject.SetActive(true);
                 closeSlider.value = _closeDelay / PopUpInfo.closeTimer;
             }
-            else
+            else if (PopUpInfo.canDeny)
                 closeSlider.gameObject.SetActive(false);
+            else
+            {
+                closeSlider.gameObject.SetActive(true);
+                closeSlider.value = 1;
+            }
 
             if (_acceptDelay > 0)
             {
@@ -73,17 +79,21 @@ namespace Coderman
         {
             CloseCombo = closeCombo;
             _openKey = openKey;
+            PopUpInfo = popUpInfo;
+            summary.text = PopUpInfo.header;
+            closeText.gameObject.SetActive(PopUpInfo.canDeny);
+            if (PopUpInfo.canDeny)
+            {
+                string closeString = CloseCombo[0].ToString();
+                for (int i = 1; i < CloseCombo.Count; i++)
+                    closeString += CloseCombo[i].ToString();
+                closeText.text = closeString;
+            }
 
-            string closeString = closeCombo[0].ToString();
-            for (int i = 1; i < closeCombo.Count; i++)
-                closeString += closeCombo[i].ToString();
-
-            closeText.text = closeString;
             openText.text = openKey.ToString();
 
             _index = 0;
 
-            PopUpInfo = popUpInfo;
 
             _acceptDelay = PopUpInfo.acceptTimer;
             _closeDelay = PopUpInfo.closeTimer;

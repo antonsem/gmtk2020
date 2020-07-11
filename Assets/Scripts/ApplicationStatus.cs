@@ -4,14 +4,16 @@ namespace Coderman
 {
     public class ApplicationStatus : MonoBehaviour
     {
-        public static bool IsQuitting { get; private set; } = false;
-        public static bool IsPaused => IsHelpActive || IsCreditsActive || IsExitActive;
+        public static bool IsQuitting { get; set; } = false;
+        public static bool IsPaused => IsHelpActive || IsCreditsActive || IsExitActive || IsNewCareerActive;
         public static bool IsPopUpActive { get; private set; } = false;
+        public static bool IsCareerActive { get; private set; } = false;
+        public static bool IsNewCareerActive { get; private set; } = false;
         public static bool IsHelpActive { get; private set; } = false;
         public static bool IsCreditsActive { get; private set; } = false;
         public static bool IsExitActive { get; private set; } = false;
         public static float Effectiveness { get; set; } = 1;
-        public static float DeadlineTime { get; set; } = 60;
+        public static float DeadlineTime { get; set; } = 20;
 
         public static float CompletionPercentage { get; set; } = 0;
 
@@ -19,31 +21,43 @@ namespace Coderman
 
         private void Start()
         {
+#if !UNITY_EDITOR
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+#endif
             IsQuitting = false;
             IsPopUpActive = false;
             IsHelpActive = false;
             IsCreditsActive = false;
             IsExitActive = false;
-            DeadlineTime = 60;
+            IsCareerActive = false;
+            IsNewCareerActive = false;
+            DeadlineTime = 10;
         }
 
         private void OnEnable()
         {
             Events.Instance.popUpStatus += PopUpStatus;
+            Events.Instance.startCareer += StartCareer;
             Events.Instance.helpStatus += HelpStatus;
             Events.Instance.creditsStatus += CreditsStatus;
             Events.Instance.exitStatus += ExitStatus;
+            Events.Instance.gameOver += OnGameOver;
+            Events.Instance.beatTheGame += OnGameDone;
+            Events.Instance.careerStatus += CareerStatus;
         }
 
         private void OnDisable()
         {
             if (IsQuitting) return;
             Events.Instance.popUpStatus -= PopUpStatus;
+            Events.Instance.startCareer -= StartCareer;
             Events.Instance.helpStatus -= HelpStatus;
             Events.Instance.creditsStatus -= CreditsStatus;
             Events.Instance.exitStatus -= ExitStatus;
+            Events.Instance.gameOver -= OnGameOver;
+            Events.Instance.beatTheGame -= OnGameDone;
+            Events.Instance.careerStatus -= CareerStatus;
         }
 
         private void OnApplicationQuit()
@@ -53,15 +67,38 @@ namespace Coderman
 
         private void Update()
         {
-            if (IsPaused) return;
+            if (IsPaused || !IsCareerActive) return;
 
             if (DeadlineTime > 0)
                 DeadlineTime -= Time.deltaTime;
             else
+            {
+                Events.Instance.gameOver?.Invoke();
                 DeadlineTime = 0;
+            }
         }
 
         #endregion
+
+        private void CareerStatus(bool val)
+        {
+            IsNewCareerActive = val;
+        }
+
+        private void OnGameDone()
+        {
+            IsCareerActive = false;
+        }
+
+        private void OnGameOver()
+        {
+            IsCareerActive = false;
+        }
+
+        private void StartCareer(bool val)
+        {
+            IsCareerActive = val;
+        }
 
         private void PopUpStatus(bool val)
         {

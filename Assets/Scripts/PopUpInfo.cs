@@ -11,6 +11,7 @@ namespace Coderman
         public PopUpAction[] actions;
         public float acceptTimer;
         public float closeTimer;
+        public bool canDeny;
     }
 
     [Serializable]

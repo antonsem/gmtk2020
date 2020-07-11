@@ -4,7 +4,7 @@ namespace Coderman
 {
     public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
-        private bool _isQuitting = false;
+        private static bool _isQuitting = false;
         private static T _instance = null;
         public static T Instance
         {
