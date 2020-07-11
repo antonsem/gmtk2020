@@ -9,16 +9,20 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ApplicationStatus.cs" t="Include" />
+          <e p="CreditsPanel.cs" t="Include" />
           <e p="Events.cs" t="Include" />
           <e p="Extensions.cs" t="Include" />
+          <e p="HelpPanel.cs" t="Include" />
           <e p="KeyboardInputHandler.cs" t="Include" />
           <e p="Notification.cs" t="Include" />
           <e p="Notifications.cs" t="Include" />
           <e p="PopUp.cs" t="Include" />
           <e p="PopUpInfo.cs" t="Include" />
           <e p="PopupTerminal.cs" t="Include" />
+          <e p="QuitPanel.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="Terminal.cs" t="Include" />
+          <e p="TopBar.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

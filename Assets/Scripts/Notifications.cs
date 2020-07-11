@@ -22,6 +22,8 @@ namespace Coderman
 
         private void Update()
         {
+            if (ApplicationStatus.IsPaused) return;
+
             _nextNotificationTime -= Time.deltaTime;
             if (_nextNotificationTime > 0) return;
 

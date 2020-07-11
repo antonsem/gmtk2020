@@ -42,9 +42,11 @@ namespace Coderman
 
         private void GotKey(KeyCode key)
         {
-            if (ApplicationStatus.IsPopUpActive) return;
+            if (ApplicationStatus.IsPaused || ApplicationStatus.IsPopUpActive) return;
             if (_index == 0) terminal.text = "";
-            int newPos = Random.Range(minTypeSpeed, maxTypeSpeed);
+            int newPos = Random.Range(minTypeSpeed,
+                Mathf.Clamp(Mathf.RoundToInt(maxTypeSpeed * ApplicationStatus.Effectiveness), minTypeSpeed + 1,
+                    maxTypeSpeed));
             if (_currentString.Length <= newPos + _index)
                 newPos = _currentString.Length - _index - 1;
 

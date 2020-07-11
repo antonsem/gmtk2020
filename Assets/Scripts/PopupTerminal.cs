@@ -65,11 +65,11 @@ namespace Coderman
 
         private void GotKey(KeyCode key)
         {
-            if (!canvas.enabled) return;
+            if (!canvas.enabled || ApplicationStatus.IsPaused) return;
 
             if (_index == 0)
                 _isConfirming = key == _confirm[_index];
-            
+
             if (_isConfirming)
             {
                 if (_index >= _confirm.Length)
@@ -83,6 +83,7 @@ namespace Coderman
                     SetInfo(_currentPopUp.actions[_currentPopUpIndex]);
                     return;
                 }
+
                 if (_confirm[_index] == key)
                 {
                     terminal.text += _confirm[_index].ToString();
@@ -108,6 +109,7 @@ namespace Coderman
                 SetInfo(_currentPopUp.actions[_currentPopUpIndex]);
                 return;
             }
+
             if (_deny[_index] == key)
             {
                 terminal.text += _deny[_index].ToString();

@@ -18,5 +18,15 @@ namespace Coderman
                 list[n] = value;  
             }  
         }
+
+        public static int GetCount<T>(this Queue<T> list, T obj)
+        {
+            int count = 0;
+
+            foreach (T item in list)
+                if (item.Equals(obj)) count++;
+
+            return count;
+        }
     }
 }

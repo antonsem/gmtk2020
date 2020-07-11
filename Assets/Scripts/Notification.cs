@@ -39,6 +39,8 @@ namespace Coderman
 
         private void Update()
         {
+            if (ApplicationStatus.IsPaused) return;
+
             if (_closeDelay > 0)
             {
                 _closeDelay -= Time.deltaTime;
@@ -56,9 +58,6 @@ namespace Coderman
             }
             else
                 openSlider.gameObject.SetActive(false);
-
-            closeText.gameObject.SetActive(_closeDelay <= 0);
-            openText.gameObject.SetActive(_acceptDelay <= 0);
         }
 
         #endregion
@@ -92,7 +91,7 @@ namespace Coderman
 
         private void GotKey(KeyCode key)
         {
-            if (ApplicationStatus.IsPopUpActive) return;
+            if (ApplicationStatus.IsPaused) return;
 
             if (_acceptDelay <= 0 && key == _openKey)
             {
