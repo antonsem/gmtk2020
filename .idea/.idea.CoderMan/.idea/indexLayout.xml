@@ -3,15 +3,16 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
-      <Path>Library/PackageCache/com.antonsem.extratools@7abda6263f</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@2.0.5</Path>
       <Path>Library/PackageCache/com.unity.recorder@2.2.0-preview.4</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.core@7.4.1</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.4.1</Path>
-      <Path>Library/PackageCache/com.unity.shadergraph@7.4.1</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.core@8.1.0</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.universal@8.1.0</Path>
+      <Path>Library/PackageCache/com.unity.searcher@4.0.9</Path>
+      <Path>Library/PackageCache/com.unity.shadergraph@8.1.0</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.13</Path>
-      <Path>Library/PackageCache/com.unity.textmeshpro@2.1.0</Path>
+      <Path>Library/PackageCache/com.unity.test-framework@1.1.14</Path>
+      <Path>Library/PackageCache/com.unity.textmeshpro@3.0.0</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.2.6</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
@@ -22,6 +23,7 @@
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>
+      <Path>UserSettings</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

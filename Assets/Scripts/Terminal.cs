@@ -12,7 +12,6 @@ namespace Coderman
         [SerializeField] private int maxTypeSpeed = 5;
 
         private string _currentString;
-        private bool _isQuitting = false;
         private int _index = 0;
         private int _lineCount = 2;
 
@@ -25,13 +24,8 @@ namespace Coderman
 
         private void OnDisable()
         {
-            if (_isQuitting) return;
+            if (ApplicationStatus.IsQuitting) return;
             Events.Instance.pressedKeyboardKey -= GotKey;
-        }
-
-        private void OnApplicationQuit()
-        {
-            _isQuitting = true;
         }
 
         private void Start()
@@ -48,6 +42,7 @@ namespace Coderman
 
         private void GotKey(KeyCode key)
         {
+            if (ApplicationStatus.IsPopUpActive) return;
             if (_index == 0) terminal.text = "";
             int newPos = Random.Range(minTypeSpeed, maxTypeSpeed);
             if (_currentString.Length <= newPos + _index)

@@ -14,6 +14,9 @@
           <e p="KeyboardInputHandler.cs" t="Include" />
           <e p="Notification.cs" t="Include" />
           <e p="Notifications.cs" t="Include" />
+          <e p="PopUp.cs" t="Include" />
+          <e p="PopUpInfo.cs" t="Include" />
+          <e p="PopupTerminal.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="Terminal.cs" t="Include" />
         </e>

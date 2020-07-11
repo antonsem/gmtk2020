@@ -12,17 +12,13 @@ namespace Coderman
         [SerializeField] private float maxTime = 10;
         [SerializeField] private int maxNotifications = 20;
         [SerializeField] private List<KeyCode> possibleKeys = new List<KeyCode>();
+        [SerializeField] private PopUpInfo testPopup;
 
         private List<KeyCode> _keysInUse = new List<KeyCode>();
         private List<Notification> _notifications = new List<Notification>();
         private float _nextNotificationTime = 5;
 
         #region Unity Methods
-
-        // private void Start()
-        // {
-        //     possibleKeys = KeyboardInputHandler.Instance.GetKeys();
-        // }
 
         private void Update()
         {
@@ -41,7 +37,7 @@ namespace Coderman
             {
                 if (_notifications[i].gameObject.activeSelf) continue;
                 _notifications[i].transform.SetAsLastSibling();
-                _notifications[i].SetKeys(GetUniqueKeys(3), GetUniqueKeys(1)[0]);
+                _notifications[i].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], testPopup);
                 _notifications[i].gameObject.SetActive(true);
                 return;
             }
@@ -51,7 +47,7 @@ namespace Coderman
 
             _notifications[_notifications.Count - 1]
                 .Init(_notifications.Count - 1, CloseNotification, OpenNotification);
-            _notifications[_notifications.Count - 1].SetKeys(GetUniqueKeys(3), GetUniqueKeys(1)[0]);
+            _notifications[_notifications.Count - 1].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], testPopup);
         }
 
         private void CloseNotification(int index)
@@ -63,7 +59,7 @@ namespace Coderman
 
         private void OpenNotification(int index)
         {
-            Debug.LogError($"Opening {index.ToString()}!");
+            Events.Instance.setPopUp?.Invoke(_notifications[index].PopUpInfo);
             CloseNotification(index);
         }
 
