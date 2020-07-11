@@ -22,7 +22,7 @@ namespace Coderman
 
             _gameEvents = new Dictionary<string, Action>
             {
-                {"gotTheJob", () => Events.Instance.startCareer(true)}
+                {"gotTheJob", () => Events.Instance.startCareer?.Invoke(true)}
             };
         }
 

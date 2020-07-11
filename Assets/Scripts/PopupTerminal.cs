@@ -44,6 +44,7 @@ namespace Coderman
             SetInfo(_currentPopUp.actions[0]);
             canvas.enabled = true;
             Events.Instance.popUpStatus?.Invoke(true);
+            Events.Instance.playPopUpSound?.Invoke();
         }
 
         private void SetInfo(in PopUpAction action)

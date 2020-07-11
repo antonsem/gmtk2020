@@ -64,6 +64,7 @@ namespace Coderman
 
         private void CloseNotification(int index)
         {
+            Events.Instance.playCloseNotificationSound?.Invoke();
             _notifications[index].gameObject.SetActive(false);
             for (int i = 0; i < _notifications[index].CloseCombo.Count; i++)
                 _keysInUse.Remove(_notifications[index].CloseCombo[i]);

@@ -11,6 +11,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ApplicationStatus.cs" t="Include" />
+          <e p="AudioManager.cs" t="Include" />
           <e p="BeatTheGamePanel.cs" t="Include" />
           <e p="CreditsPanel.cs" t="Include" />
           <e p="Events.cs" t="Include" />

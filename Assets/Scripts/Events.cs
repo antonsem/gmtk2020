@@ -18,5 +18,8 @@ namespace Coderman
         public Action gameOver;
         public Action<bool> startCareer;
         public Action<bool> careerStatus;
+        public Action playCloseNotificationSound;
+        public Action playNotificationSound;
+        public Action playPopUpSound;
     }
 }

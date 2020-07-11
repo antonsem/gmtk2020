@@ -32,7 +32,7 @@ namespace Coderman
             IsExitActive = false;
             IsCareerActive = false;
             IsNewCareerActive = false;
-            DeadlineTime = 10;
+            DeadlineTime = 60;
         }
 
         private void OnEnable()

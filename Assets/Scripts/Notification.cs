@@ -30,6 +30,7 @@ namespace Coderman
         private void OnEnable()
         {
             Events.Instance.pressedKeyboardKey += GotKey;
+            Events.Instance.playNotificationSound?.Invoke();
         }
 
         private void OnDisable()

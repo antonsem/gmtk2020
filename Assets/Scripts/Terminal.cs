@@ -22,12 +22,14 @@ namespace Coderman
         private void OnEnable()
         {
             Events.Instance.pressedKeyboardKey += GotKey;
+            Events.Instance.startCareer += StartCareer;
         }
 
         private void OnDisable()
         {
             if (ApplicationStatus.IsQuitting) return;
             Events.Instance.pressedKeyboardKey -= GotKey;
+            Events.Instance.startCareer -= StartCareer;
         }
 
         private void Start()
@@ -36,6 +38,11 @@ namespace Coderman
         }
 
         #endregion
+
+        private void StartCareer(bool val)
+        {
+            if (val) _currentString = GetASample(1);
+        }
 
         private string GetASample(int sampleCount)
         {
@@ -52,6 +59,7 @@ namespace Coderman
                 return "";
             }
 
+            _index = 0;
             _codeSampleName = codeSamples[sampleCount].name;
             return codeSamples[sampleCount].text;
         }
