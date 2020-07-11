@@ -1,0 +1,77 @@
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.Tilemaps;
+
+namespace Piab.Tiles
+{
+    public class BreakableTile : Tile
+    {
+        [SerializeField] private float pushForce = 1;
+        private Transform _defaultParent;
+        private Transform _transform;
+        private TilemapCollider2D _collider;
+        private Vector3 _defaultPosition = Vector3.zero;
+
+        private void Awake()
+        {
+            _collider = GetComponent<TilemapCollider2D>();
+            _transform = transform;
+            _defaultPosition = _transform.localPosition;
+            _defaultParent = _transform.parent;
+        }
+
+        protected override void OnPlayerHit(in Player player, ContactPoint2D[] contacts)
+        {
+            base.OnPlayerHit(in player, contacts);
+
+            float normalDirection = Vector2.Dot(contacts[0].normal, Vector2.right);
+            if (normalDirection > 0.9f)
+            {
+                StartCoroutine(Break(contacts[0].point));
+                player.Direction = -1;
+                return;
+            }
+
+            if (normalDirection < -0.9f)
+            {
+                StartCoroutine(Break(contacts[0].point));
+                player.Direction = 1;
+                return;
+            }
+
+            StartCoroutine(Break(contacts[0].point));
+            player.PushVertical(Mathf.Sign(normalDirection * -pushForce));
+        }
+
+        public override void Restart()
+        {
+            base.Restart();
+            gameObject.SetActive(true);
+        }
+
+        private IEnumerator Break(Vector3 hitPoint)
+        {
+            _collider.enabled = false;
+            Transform newParent = new GameObject("HitPoint").transform;
+            newParent.position = hitPoint;
+            newParent.SetParent(_defaultParent, true);
+            _transform.SetParent(newParent, true);
+            float progress = 1;
+            while (progress > 0)
+            {
+                newParent.localScale = Vector3.one * progress;
+                progress -= Time.deltaTime * 10;
+                yield return null;
+            }
+
+            ResourceManager.Instance.shockwave.Get<Shockwave>(hitPoint, new Vector3(-90, 0, 0))
+                .Play(1.5f, 0.01f, 0.25f);
+
+            gameObject.SetActive(false);
+            _transform.SetParent(_defaultParent);
+            _transform.localPosition = _defaultPosition;
+            _transform.localScale = Vector3.one;
+            _collider.enabled = true;
+        }
+    }
+}

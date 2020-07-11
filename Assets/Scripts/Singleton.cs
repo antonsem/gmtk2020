@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ExtraTools
+namespace Coderman
 {
     public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {

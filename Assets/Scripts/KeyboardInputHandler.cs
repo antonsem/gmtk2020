@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using ExtraTools;
 
 namespace Coderman
 {
-    public class KeyboardInputHandler : MonoBehaviour
+    public class KeyboardInputHandler : Singleton<KeyboardInputHandler>
     {
         [SerializeField] private KeyCode[] acceptedKeys;
+
+        #region Unity Methods
 
         private void OnEnable()
         {
@@ -22,5 +26,13 @@ namespace Coderman
                     Events.Instance.pressedKeyboardKey?.Invoke(acceptedKeys[i]);
             }
         }
+
+        #endregion
+
+        public List<KeyCode> GetKeys()
+        {
+            return new List<KeyCode>(acceptedKeys);
+        }
+        
     }
 }
