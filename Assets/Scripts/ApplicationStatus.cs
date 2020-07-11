@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace Coderman
 {
@@ -11,9 +10,7 @@ namespace Coderman
         public static bool IsHelpActive { get; private set; } = false;
         public static bool IsCreditsActive { get; private set; } = false;
         public static bool IsExitActive { get; private set; } = false;
-
         public static float Effectiveness { get; set; } = 1;
-
         public static float DeadlineTime { get; set; } = 60;
 
         public static float CompletionPercentage { get; set; } = 0;
@@ -22,7 +19,13 @@ namespace Coderman
 
         private void Start()
         {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             IsQuitting = false;
+            IsPopUpActive = false;
+            IsHelpActive = false;
+            IsCreditsActive = false;
+            IsExitActive = false;
             DeadlineTime = 60;
         }
 
