@@ -1,0 +1,17 @@
+using UnityEngine;
+
+namespace Coderman
+{
+    public class AudioManager : MonoBehaviour
+    {
+        [SerializeField] private AudioSource keyboardSource;
+        [SerializeField] private AudioClip keyboardSound;
+        [SerializeField] private float keyboardDelay = 0.1f;
+
+        [SerializeField] private AudioSource notificationSource;
+        [SerializeField] private AudioClip gotNotification;
+        [SerializeField] private AudioClip closeNotification;
+        [SerializeField] private AudioClip openPopup;
+
+        private float _keyboardDelay = 0;
+}

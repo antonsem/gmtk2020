@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Coderman
@@ -12,6 +13,8 @@ namespace Coderman
         [SerializeField] private AudioClip gotNotification;
         [SerializeField] private AudioClip closeNotification;
         [SerializeField] private AudioClip openPopup;
+
+        [SerializeField] private AudioSource musicSource;
 
         private float _keyboardDelay = 0;
 
@@ -38,6 +41,8 @@ namespace Coderman
         {
             if (_keyboardDelay > 0)
                 _keyboardDelay -= Time.deltaTime;
+            if(Input.GetKeyDown(KeyCode.F8))
+                ToggleMusic();
         }
 
         #endregion
@@ -64,6 +69,31 @@ namespace Coderman
         private void PlayPopUpSound()
         {
             notificationSource.PlayOneShot(openPopup);
+        }
+
+        private void ToggleMusic()
+        {
+            StartCoroutine(ToggleMusicCoroutine(musicSource.volume < 0.01f));
+        }
+
+        private IEnumerator ToggleMusicCoroutine(bool play)
+        {
+            float desiredVolume = 0.1f;
+            if (play)
+                musicSource.volume = 0;
+            else
+            {
+                musicSource.volume = 0.1f;
+                desiredVolume = 0;
+            }
+
+            while (Mathf.Abs(musicSource.volume - desiredVolume) > 0.01f)
+            {
+                musicSource.volume = Mathf.Lerp(musicSource.volume, desiredVolume, Time.deltaTime * 5);
+                yield return null;
+            }
+
+            musicSource.volume = desiredVolume;
         }
     }
 }

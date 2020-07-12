@@ -1,0 +1,17 @@
+﻿namespace Coderman
+{
+    public class ApplicationStatus : MonoBehaviour
+    {
+        public static bool IsQuitting { get; set; } = false;
+        public static bool IsPaused => IsHelpActive || IsCreditsActive || IsExitActive || IsNewCareerActive;
+        public static bool IsPopUpActive { get; private set; } = false;
+        public static bool IsCareerActive { get; private set; } = false;
+        public static bool IsNewCareerActive { get; private set; } = false;
+        public static bool IsHelpActive { get; private set; } = false;
+        public static bool IsCreditsActive { get; private set; } = false;
+        public static bool IsExitActive { get; private set; } = false;
+        public static float Effectiveness { get; set; } = 1;
+        public static float DeadlineTime { get; set; } = 20;
+        public static float CompletionPercentage { get; set; } = 0;
+    }
+}

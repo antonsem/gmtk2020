@@ -16,12 +16,10 @@ namespace Coderman
         public Action<string> doneWithCode;
         public Action beatTheGame;
         public Action gameOver;
-        public Action<float> timeChange;
         public Action<bool> startCareer;
         public Action<bool> careerStatus;
         public Action playCloseNotificationSound;
         public Action playNotificationSound;
         public Action playPopUpSound;
-        public Action spam;
     }
 }

@@ -11,7 +11,7 @@ namespace Coderman
         [SerializeField] private float maxTime = 10;
         [SerializeField] private int maxNotifications = 20;
         [SerializeField] private List<KeyCode> possibleKeys = new List<KeyCode>();
-        [SerializeField] private PopUpInfo[] spams;
+        [SerializeField] private PopUpInfo testPopup;
 
         private List<KeyCode> _keysInUse = new List<KeyCode>();
         private List<Notification> _notifications = new List<Notification>();
@@ -22,14 +22,12 @@ namespace Coderman
         private void OnEnable()
         {
             Events.Instance.pushNotification += SetNotification;
-            Events.Instance.spam += Spam;
         }
 
         private void OnDisable()
         {
             if (ApplicationStatus.IsQuitting) return;
             Events.Instance.pushNotification -= SetNotification;
-            Events.Instance.spam -= Spam;
         }
 
         private void Update()
@@ -40,25 +38,18 @@ namespace Coderman
             if (_nextNotificationTime > 0) return;
 
             _nextNotificationTime = Random.Range(minTime, maxTime);
-            SetNotification(spams[Random.Range(0, spams.Length)]);
+            SetNotification(testPopup);
         }
 
         #endregion
 
-        private void Spam()
-        {
-            int count = Random.Range(1, 4);
-            for (int i = 0; i < count; i++)
-                SetNotification(spams[Random.Range(0, spams.Length)]);
-        }
-        
         private void SetNotification(PopUpInfo info)
         {
             for (int i = 0; i < _notifications.Count; i++)
             {
                 if (_notifications[i].gameObject.activeSelf) continue;
                 _notifications[i].transform.SetAsLastSibling();
-                _notifications[i].Set(GetUniqueKeys(info.closeKeyCount), GetUniqueKeys(1)[0], info);
+                _notifications[i].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], info);
                 _notifications[i].gameObject.SetActive(true);
                 return;
             }
@@ -68,14 +59,13 @@ namespace Coderman
 
             _notifications[_notifications.Count - 1]
                 .Init(_notifications.Count - 1, CloseNotification, OpenNotification);
-            _notifications[_notifications.Count - 1].Set(GetUniqueKeys(info.closeKeyCount), GetUniqueKeys(1)[0], info);
+            _notifications[_notifications.Count - 1].Set(GetUniqueKeys(3), GetUniqueKeys(1)[0], info);
         }
 
         private void CloseNotification(int index)
         {
             Events.Instance.playCloseNotificationSound?.Invoke();
             _notifications[index].gameObject.SetActive(false);
-            _keysInUse.Remove(_notifications[index].OpenKey);
             for (int i = 0; i < _notifications[index].CloseCombo.Count; i++)
                 _keysInUse.Remove(_notifications[index].CloseCombo[i]);
         }

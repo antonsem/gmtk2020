@@ -123,141 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &9110912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9110913}
-  - component: {fileID: 9110915}
-  - component: {fileID: 9110914}
-  m_Layer: 0
-  m_Name: HelpWebGL
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &9110913
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110912}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 442530177}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9110914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: <color=yellow>HELP [F1]</color> | <color=yellow>CREDITS [F9]</color>
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278763264
-  m_fontColor: {r: 0, g: 0.7490196, b: 0.03137255, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &9110915
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9110912}
-  m_CullTransparentMesh: 0
 --- !u!1 &44124316
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,8 +612,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Coderman 1.0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1043,36 +908,75 @@ MonoBehaviour:
   content: {fileID: 333200028}
   minTime: 3
   maxTime: 10
-  maxNotifications: 2
+  maxNotifications: 5
   possibleKeys: 71000000770000006500000072000000740000007900000075000000690000006f000000700000006100000073000000640000006600000067000000680000006a0000006b0000006c0000007a000000780000006300000076000000620000006e0000006d000000
-  testPopup:
-    id: HotDate
-    header: Hot date in you area!
+  spams:
+  - id: spam
+    header: Hot Date
     actions:
-    - text: '-> I need to ask you a favor.
-
-        -> Can you check if you have
-        an acces to my nudes?
-
-        -> I don''t want for someone I know to see
-        them.
-
-        -> So I choose a random handsome stranger to do it for me!
+    - text: 'HOT DATES ARE LOOKING AT YOUR PROFILE!
 
 
-        =========
+        Check them out right
+        now!
 
-        Confirm:
-        YES
 
-        Deny: NO
+        =====
 
-        ========='
-      confirm: 790000006500000073000000
-      deny: 6e0000006f000000
+        CHECK OUT: [OK]
+
+        DELETE: [DELETE]
+
+        ====='
+      confirm: 6f0000006b000000
+      deny: 64000000650000006c000000650000007400000065000000
+    - text: 'You are one step closer to the love of your life! Send us your credit
+        card info so we can confirm that you are a real person!
+
+
+        =====
+
+        HERE
+        IT IS: [CARD]
+
+        NO WAY!: [NOWAY]
+
+        ====='
+      confirm: 63000000610000007200000064000000
+      deny: 6e0000006f000000770000006100000079000000
+    - text: 'Almost there! We will open up your profile right away! We will notify
+        you as soon as that happens!
+
+
+        =====
+
+        I CAN''T WAIT!: [CANTWAIT]
+
+        ====='
+      confirm: 63000000610000006e0000007400000077000000610000006900000074000000
+      deny: 6e0000006f000000770000006100000079000000
     acceptTimer: 1
-    closeTimer: 5
+    closeTimer: 2
     canDeny: 1
+    closeKeyCount: 3
+  - id: spam2
+    header: Suzzy21
+    actions:
+    - text: 'Hey handsome! Want to hang out tonigh? I''m all yours!
+
+
+        =====
+
+        NO:
+        [GOAWAY]
+
+        ====='
+      confirm: 670000006f00000061000000770000006100000079000000
+      deny: 64000000650000006c000000650000007400000065000000
+    acceptTimer: 1
+    closeTimer: 2
+    canDeny: 1
+    closeKeyCount: 3
 --- !u!1 &274542279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,8 +1036,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Screw these loosers
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1557,7 +1461,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1848341061}
-  - {fileID: 9110913}
   m_Father: {fileID: 830968758}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1600,17 +1503,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445634179}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 957304737}
+  m_Father: {fileID: 1492997227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -349.7041}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 580, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &445634181
 MonoBehaviour:
@@ -1634,8 +1537,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1652,7 +1555,7 @@ MonoBehaviour:
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
+  m_spriteAsset: {fileID: 11400000, guid: c41005c129ba4d66911b75229fd70b45, type: 2}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
   m_TextStyleHashCode: -1183493901
@@ -2116,8 +2019,8 @@ MonoBehaviour:
 
     =============================='
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2364,8 +2267,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '| Effectiveness:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2508,8 +2411,8 @@ MonoBehaviour:
 
     =============================='
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2646,7 +2549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2740,8 +2643,8 @@ MonoBehaviour:
 
     =============================='
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2996,8 +2899,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: QUIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3131,8 +3034,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HELP
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3284,8 +3187,8 @@ MonoBehaviour:
 
     =============================='
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3419,6 +3322,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '==============================
 
+
     Created by Anton Semchenko
 
     For
@@ -3426,10 +3330,17 @@ MonoBehaviour:
 
     The theme was Out of Control
 
+
+    Sound
+    effects are downloaded from
+
+    https://www.freesfx.co.uk/
+
+
     =============================='
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3644,8 +3555,6 @@ GameObject:
   - component: {fileID: 957304739}
   - component: {fileID: 957304738}
   - component: {fileID: 957304741}
-  - component: {fileID: 957304742}
-  - component: {fileID: 957304743}
   m_Layer: 0
   m_Name: Terminal
   m_TagString: Untagged
@@ -3664,7 +3573,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 445634180}
+  - {fileID: 1492997227}
   m_Father: {fileID: 830968758}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3746,55 +3655,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terminal: {fileID: 445634181}
   codeSamples:
-  - {fileID: 4900000, guid: 9a6d950096248fb4a826b9d05b7088af, type: 3}
-  - {fileID: 4900000, guid: 4de0e25ea15f19447b56de6ae6aec9e1, type: 3}
+  - {fileID: 4900000, guid: c6c762012ce529e4a9436f4817bc820a, type: 3}
+  - {fileID: 4900000, guid: 978077241b1726f4a91f6cf59e3f75e1, type: 3}
+  - {fileID: 4900000, guid: 9ffd599cb1fcf454d868265e7463fe9f, type: 3}
+  - {fileID: 4900000, guid: 492420d954ced4a4886e84a8c81a7e3d, type: 3}
+  - {fileID: 4900000, guid: db56f9dffd1220f43bc2d0622c064491, type: 3}
+  - {fileID: 4900000, guid: b5c72c07a43e9814599cf93baa654dda, type: 3}
+  - {fileID: 4900000, guid: 32f4d5a21c99a84478a67063c015e66c, type: 3}
+  - {fileID: 4900000, guid: e0daeddbb66f7674586bcc9639b59053, type: 3}
+  - {fileID: 4900000, guid: 978077241b1726f4a91f6cf59e3f75e1, type: 3}
+  - {fileID: 4900000, guid: 3bd6a6fc8892c574f9d81b598bc077af, type: 3}
+  - {fileID: 4900000, guid: 3d95fd3a28250ed47a040817707d75ef, type: 3}
+  - {fileID: 4900000, guid: 02f3eeca208299f4ea9f847adc6904c5, type: 3}
+  - {fileID: 4900000, guid: 1aeb7a8c6a0456e4ca01fd3b109f0b13, type: 3}
+  - {fileID: 4900000, guid: 89a52417d12ba4f469e38f7b64f1fb63, type: 3}
+  - {fileID: 4900000, guid: 84d2ce7b4fafe8c48bc640afa6dd036e, type: 3}
+  - {fileID: 4900000, guid: 21203200e32ac4942b28d1613bd9f3cc, type: 3}
+  - {fileID: 4900000, guid: 980b0accec2524943af12272a46d681a, type: 3}
+  - {fileID: 4900000, guid: ccc0f9fc1d5a26d4b83f1ed2c0e0f583, type: 3}
+  - {fileID: 4900000, guid: 9e87561d2d882ba4bb46a8391471cd92, type: 3}
+  - {fileID: 4900000, guid: 6e1b7d5a5b135e647b136a1503c58c0c, type: 3}
+  - {fileID: 4900000, guid: 574a4c40d3efb1f438dc64345a74b74d, type: 3}
+  - {fileID: 4900000, guid: eafd3bcc98ab5e340a1612d660305fa1, type: 3}
   randomSamples:
   - {fileID: 4900000, guid: 574a4c40d3efb1f438dc64345a74b74d, type: 3}
   minTypeSpeed: 1
   maxTypeSpeed: 10
---- !u!114 &957304742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957304736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Content: {fileID: 445634180}
-  m_Horizontal: 0
-  m_Vertical: 1
-  m_MovementType: 2
-  m_Elasticity: 0.1
-  m_Inertia: 0
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 0}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 0
-  m_VerticalScrollbarVisibility: 0
-  m_HorizontalScrollbarSpacing: 0
-  m_VerticalScrollbarSpacing: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &957304743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957304736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
+  submit: 13
 --- !u!1 &1025256115
 GameObject:
   m_ObjectHideFlags: 0
@@ -4032,8 +3919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 80, y: 0}
+  m_SizeDelta: {x: -180, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065124007
 MonoBehaviour:
@@ -4055,10 +3942,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'anton@cdrmn $ '
+  m_text: _
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4330,6 +4217,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123304186}
   m_CullTransparentMesh: 0
+--- !u!1 &1166339655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166339656}
+  - component: {fileID: 1166339657}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1166339656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166339655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1494140793}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1166339657
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166339655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a87f2503edf7a954ea14d519713ae173, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1180374841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,14 +4498,560 @@ MonoBehaviour:
         =========
 
         YES:
-        Y
+        [YES]
 
         ========='
-      confirm: 79000000
+      confirm: 790000006500000073000000
       deny: 
-    acceptTimer: 0
+    acceptTimer: 1
     closeTimer: 0
     canDeny: 0
+    closeKeyCount: 1
+  bossDeadlineDelay:
+    id: bossDeadline
+    header: 'B: Deadline extension'
+    actions:
+    - text: 'Hey C,
+
+        I have news for you. The presentation is delayed. You
+        have more time to fix all the bugs!
+
+        - B
+
+        
+
+        =====
+
+        OK:
+        [OK]
+
+        ====='
+      confirm: 6b000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  bossFavor:
+    id: bossFavor
+    header: 'B: I have a favor to ask'
+    actions:
+    - text: 'Hey man,
+
+        How are you doing? How is the project gooing? Listnen
+        I have a favor to ask. I know you are busy, and have a lot of work to do.
+        And it is totally OK if you don''t want to do it. BUT. Can you delete my
+        browser history? I wouldvery much appreciate it!
+
+
+        Thanks
+
+        -
+        B
+
+
+        =====
+
+        YES: [SURE]
+
+        NO: [NO]
+
+        ====='
+      confirm: 73000000750000007200000065000000
+      deny: 6e0000006f000000
+    - text: '-----
+
+        Sure, no problem
+
+        - C
+
+        -----
+
+
+        I
+        know I did the right thing when I hired you! I owe you one!
+
+        - B
+
+
+        =====
+
+        OK:
+        [OK]
+
+        ====='
+      confirm: 6f0000006b000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  bossReturnTheFavor:
+    id: bossReturnFavor
+    header: 'B: I pulled some string'
+    actions:
+    - text: 'C! My man!
+
+        Thanks for the history thing. Since I know that
+        you are super stressed about this project I pulled some string and managed
+        to postpone the deadline!
+
+        
+
+        Cheers!
+
+        -B
+
+
+        =====
+
+        HUGE
+        THANKS: [THANKS]
+
+        ====='
+      confirm: 7400000068000000610000006e0000006b00000073000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  bossStatus:
+    id: bossStatus
+    header: 'B: What is the status?'
+    actions:
+    - text: 'Hey C,
+
+        Just wanted to ask about the project. How is everything?
+        Are we on the schedule?
+
+        -B
+
+
+        =====
+
+        I NEED TIME:
+        [TIME]
+
+        GREAT: [GREAT]
+
+        ====='
+      confirm: 74000000690000006d00000065000000
+      deny: 6700000072000000650000006100000074000000
+    - text: '-----
+
+        I hate to say that, but I''m gonna need more time...
+
+        -----
+
+
+        That
+        is not gonna be easy... But let me see what I can do for you...
+
+        -B
+
+
+        =====
+
+        YOU
+        ARE THE BEST: [THANKS]
+
+        ====='
+      confirm: 7400000068000000610000006e0000006b00000073000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  bossFinalNotice:
+    id: bossFinal
+    header: 'B: Urgent'
+    actions:
+    - text: 'C this is very important!
+
+        Can you make it on time?
+
+        -
+        B
+
+
+        =====
+
+        MORE TIME: [TIME]
+
+        YES: [SURE]
+
+        ====='
+      confirm: 74000000690000006d00000065000000
+      deny: 73000000750000007200000065000000
+    - text: '-----
+
+        I hate so say this, but do need some more time...
+
+        -----
+
+
+        What
+        do you mean more time?! We agreed on this date!
+
+
+        =====
+
+        PLEASE:
+        [PLEASE]
+
+        NEVERMIND, I GOT THIS: [NEVERMIND]
+
+        ====='
+      confirm: 700000006c00000065000000610000007300000065000000
+      deny: 6e000000650000007600000065000000720000006d000000690000006e00000064000000
+    - text: '-----
+
+        Please, can you do it for me? This is the last
+
+        time.
+        I PROMISE!
+
+        -----
+
+
+        OK... But it is final. No more extensions!
+
+        -
+        B
+
+
+        =====
+
+        THANKS YOU!: [THANKS]
+
+        ====='
+      confirm: 7400000068000000610000006e0000006b00000073000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  bossProjectIsDone:
+    id: bossProjectDone
+    header: 'B: Good Job!'
+    actions:
+    - text: 'Hey C!
+
+        The presentation wasn''t too bad. There were some bugs
+        in the application. Well, I guess you got what you payed for. Good job anyway.
+
+        -
+        Bart
+
+        
+
+        =====
+
+        THANKS, I GUESS: [THANKS]
+
+        ====='
+      confirm: 7400000068000000610000006e0000006b00000073000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 0
+    canDeny: 0
+    closeKeyCount: 1
+  gfHangout:
+    id: gfHangout
+    header: 'GF: Wanna hang out?'
+    actions:
+    - text: 'Hey sweetie! Wanna hang out today?
+
+
+        =====
+
+        OF COURSE:
+        [YEAH]
+
+        BUSY: [NO]
+
+        ====='
+      confirm: 6e0000006f000000
+      deny: 79000000650000006100000068000000
+    - text: '-----
+
+        Sorry honey, you know I got a new job. There is a lot
+        of work to be done....
+
+        -----
+
+
+        OK, I understand...
+
+
+        =====
+
+        THANKS
+        YOU SWETIE: [THANKS]
+
+        ====='
+      confirm: 7400000068000000610000006e0000006b00000073000000
+      deny: 6e0000006f000000
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  gfDogWalk:
+    id: gfDogWalk
+    header: 'GF: Can you walk my dog?'
+    actions:
+    - text: 'Hey honey! I need to ask you a favor... Could you walk my dog today?
+        I don''t feel very well...
+
+        
+
+        =====
+
+        OK: [OK]
+
+        NO:
+        [SORRY]
+
+        ====='
+      confirm: 730000006f000000720000007200000079000000
+      deny: 6f0000006b000000
+    - text: '-----
+
+        Sorry swetie, I have to work overtime...
+
+        -----
+
+
+        OK,
+        I guess I can ask Bart...
+
+
+        =====
+
+        OK: [OK]
+
+        ====='
+      confirm: 6f0000006b000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  gfSick:
+    id: gfSick
+    header: 'GF: Pick me up?'
+    actions:
+    - text: 'Hey honey, I feel really sick... Can you pick me up from work, I can
+        barely stand still...
+
+        
+
+        =====
+
+        OF COURSE: [YES]
+
+        WORK:
+        [STUCK]
+
+        ====='
+      confirm: 730000007400000075000000630000006b000000
+      deny: 790000006500000073000000
+    - text: '-----
+
+        I''m sorry honey, I can''t leave work now, my boss is
+        breading down my neck...
+
+        -----
+
+
+        I see... I will ask Bart.
+
+
+        =====
+
+        LOVE
+        YOU: [LOVE]
+
+        ====='
+      confirm: 
+      deny: 6c0000006f0000007600000065000000
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  gfMeetParents:
+    id: gfMeetParents
+    header: 'GF: THE BIG DAY'
+    actions:
+    - text: "OMG, I'm so exited for today! My Mom is looking forward to meet you!
+        And really think you will get along with my dad just fine.\r\n\r\n(You DO
+        remember that you promised to meet\r\n my family tonight, don't you?)\r\n\r\n=====\r\nCOMING:
+        [YES]\r\nTOTALLY FORGOT: [FORGOT]\r\n====="
+      confirm: 660000006f00000072000000670000006f00000074000000
+      deny: 790000006500000073000000
+    - text: '-----
+
+        OMG! I''m so sorry! I totally forgot about it! I don''t
+        know what to say...
+
+        -----
+
+
+        WHAT? What do you mean we have
+        to cancel?!
+
+
+        =====
+
+        I WILL MAKE IT: [NO]
+
+        YES: [SORRY]
+
+        ====='
+      confirm: 730000006f000000720000007200000079000000
+      deny: 6e0000006f000000
+    - text: '-----
+
+        I''m sorry swetie, but I will be fired if I don''t finish
+        this project in time...
+
+        -----
+
+
+        Well dad will be dissapointed
+        in this... And he is not the only one...
+
+
+        =====
+
+        I WILL
+        MAKE IT UP TO YOU: [SORRY]
+
+        ====='
+      confirm: 730000006f000000720000007200000079000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  gfBDay:
+    id: gfBDay
+    header: 'GF: Becky''s Bday'
+    actions:
+    - text: 'Hey honey, I know we didn''t plan this but today is Becky''s birthday
+        and I totally forgot about it! Can you make it tonight?
+
+        
+
+        =====
+
+        NO
+        WAY: [WORK]
+
+        YES: [YES]
+
+        ====='
+      confirm: 770000006f000000720000006b000000
+      deny: 790000006500000073000000
+    - text: '-----
+
+        There no way I can get out of work today... The deadline
+        is very close!
+
+        -----
+
+
+        OK, not a big deal. Bart will be
+        there.
+
+
+        =====
+
+        SAY HI TO BART: [HI]
+
+        ====='
+      confirm: 6800000069000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 1
+    canDeny: 1
+    closeKeyCount: 2
+  gfBadBreakup:
+    id: gfBadBreakup
+    header: 'GF: ASSHOLE!'
+    actions:
+    - text: 'C, you are a selfish asshole. I''m sick of you! Bart always is there
+        for me you know? Good luck with your work, hope you will get fired!
+
+        
+
+        Asshole!
+
+        
+
+        =====
+
+        ...:
+        [K]
+
+        ====='
+      confirm: 6b000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 0
+    canDeny: 0
+    closeKeyCount: 1
+  gfBreakup:
+    id: gfBreakup
+    header: 'GF: Sorry...'
+    actions:
+    - text: 'Hey C... I wanted to talk to you, but I guess you are busy. As always...
+        Anyway I don''t think this works anymore. I''m breaking up with you.
+
+        
+
+        I
+        wish you the best.
+
+        
+
+        =====
+
+        ...: [K]
+
+        ====='
+      confirm: 6b000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 0
+    canDeny: 0
+    closeKeyCount: 1
+  gfSurprise:
+    id: gfSurprise
+    header: 'GF: You are THE BEST'
+    actions:
+    - text: 'Hey sweetie! Just wanted to tell you how much I love you! You are the
+        best BF I''ve ever had! Enjoy your day!
+
+        
+
+        PS: Stop by
+        after work, I have a surprise for you ;)
+
+        
+
+        =====
+
+        CAN''T
+        WAIT: [YEY]
+
+        ====='
+      confirm: 790000006500000079000000
+      deny: 
+    acceptTimer: 1
+    closeTimer: 0
+    canDeny: 0
+    closeKeyCount: 1
 --- !u!4 &1389461892
 Transform:
   m_ObjectHideFlags: 0
@@ -4715,6 +5275,127 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1448772767}
+--- !u!1 &1492997226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1492997227}
+  - component: {fileID: 1492997231}
+  - component: {fileID: 1492997230}
+  - component: {fileID: 1492997229}
+  - component: {fileID: 1492997228}
+  m_Layer: 0
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1492997227
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492997226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 445634180}
+  m_Father: {fileID: 957304737}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1492997228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492997226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &1492997229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492997226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 445634180}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 0
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1492997230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492997226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1492997231
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492997226}
+  m_CullTransparentMesh: 0
 --- !u!1 &1494140791
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,6 +5432,7 @@ MonoBehaviour:
   gotNotification: {fileID: 8300000, guid: c60091417d1da4b4ab5dbe55471f7d40, type: 3}
   closeNotification: {fileID: 8300000, guid: 0e5714bb2e58f234c86581532077793a, type: 3}
   openPopup: {fileID: 8300000, guid: c024e024871c14d4d8520fb15ac6e9da, type: 3}
+  musicSource: {fileID: 1166339657}
 --- !u!4 &1494140793
 Transform:
   m_ObjectHideFlags: 0
@@ -4764,6 +5446,7 @@ Transform:
   m_Children:
   - {fileID: 1038330147}
   - {fileID: 926973487}
+  - {fileID: 1166339656}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4826,8 +5509,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '| Deadline:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5036,8 +5719,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 123.2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5318,6 +6001,8 @@ MonoBehaviour:
   header: {fileID: 1688465403}
   body: {fileID: 2004465861}
   canvas: {fileID: 1595291359}
+  submit: 13
+  clear: 8
 --- !u!1 &1612452310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,6 +6124,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612452310}
   m_CullTransparentMesh: 0
+--- !u!1 &1651744468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651744469}
+  - component: {fileID: 1651744471}
+  - component: {fileID: 1651744470}
+  m_Layer: 0
+  m_Name: Label
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1651744469
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651744468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2133059622}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -260, y: 0}
+  m_SizeDelta: {x: -540, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1651744470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651744468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'cdrmn@term $ '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278247423
+  m_fontColor: {r: 1, g: 0.875, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1651744471
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651744468}
+  m_CullTransparentMesh: 0
 --- !u!1 &1661980259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,8 +6318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Notifications
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5748,8 +6568,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Message Header
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5883,8 +6703,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Best Coderman of the Company!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6130,10 +6950,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: <color=yellow>HELP [F1]</color> | <color=yellow>NEW CAREER [F4]</color>
-    | <color=yellow>CREDITS [F9]</color> | <color=yellow>EXIT [F12]</color>
+    | <color=yellow>MUSIC [F8]</color> | <color=yellow>CREDITS [F9]</color> | <color=yellow>EXIT
+    [F12]</color>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6158,8 +6979,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6267,8 +7088,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6629,8 +7450,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'RE: Project Status?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6855,8 +7676,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6881,8 +7702,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7140,8 +7961,8 @@ MonoBehaviour:
 
     =============================='
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6a22d4384c3aa3d498e1421f84f6fdb0, type: 2}
-  m_sharedMaterial: {fileID: -6546489473630893070, guid: 6a22d4384c3aa3d498e1421f84f6fdb0,
+  m_fontAsset: {fileID: 11400000, guid: 3dd60ff13fece244cbd09f8c2d0b8f34, type: 2}
+  m_sharedMaterial: {fileID: 8905298817307637575, guid: 3dd60ff13fece244cbd09f8c2d0b8f34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7370,6 +8191,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1065124006}
+  - {fileID: 1651744469}
   m_Father: {fileID: 1595291358}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

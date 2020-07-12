@@ -12,7 +12,6 @@ namespace Coderman
         public float acceptTimer;
         public float closeTimer;
         public bool canDeny;
-        public int closeKeyCount;
     }
 
     [Serializable]

@@ -5,9 +5,28 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="CodeSamples" t="Include">
-          <e p="BreakableTile.txt" t="Include" />
+          <e p="ApplicationStatus.txt" t="Include" />
+          <e p="AudioManager.txt" t="Include" />
+          <e p="BeatTheGamePanel.txt" t="Include" />
+          <e p="CreditsPanel.txt" t="Include" />
+          <e p="Events.txt" t="Include" />
+          <e p="Extensions.txt" t="Include" />
+          <e p="GameOverPanel.txt" t="Include" />
+          <e p="HelpPanel.txt" t="Include" />
           <e p="intro.txt" t="Include" />
+          <e p="KeyboardInputHandler.txt" t="Include" />
+          <e p="NewCareerPanel.txt" t="Include" />
+          <e p="Notification.txt" t="Include" />
+          <e p="Notifications.txt" t="Include" />
+          <e p="PopUp.txt" t="Include" />
+          <e p="PopUpInfo.txt" t="Include" />
+          <e p="PopupTerminal.txt" t="Include" />
+          <e p="ProgressionEvents.txt" t="Include" />
+          <e p="QuitPanel.txt" t="Include" />
+          <e p="Singleton.txt" t="Include" />
+          <e p="Terminal.txt" t="Include" />
           <e p="testing.txt" t="Include" />
+          <e p="TopBar.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="ApplicationStatus.cs" t="Include" />
@@ -35,6 +54,7 @@
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
             <e p="Matthew Welch License - White Rabbit.txt" t="Include" />
+            <e p="ProFont Redistribution Terms.txt" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="LineBreaking Following Characters.txt" t="Include" />

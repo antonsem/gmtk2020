@@ -9,8 +9,6 @@ namespace Coderman
         [SerializeField] private TextMeshProUGUI header;
         [SerializeField] private TextMeshProUGUI body;
         [SerializeField] private Canvas canvas;
-        [SerializeField] private KeyCode submit = KeyCode.Return;
-        [SerializeField] private KeyCode clear = KeyCode.Backspace;
 
         private PopUpInfo _currentPopUp;
         private int _index = 0;
@@ -38,7 +36,6 @@ namespace Coderman
 
         private void SetPopUp(PopUpInfo info)
         {
-            _isConfirming = false;
             _index = 0;
             _currentPopUpIndex = 0;
             _currentPopUp = info;
@@ -52,9 +49,7 @@ namespace Coderman
 
         private void SetInfo(in PopUpAction action)
         {
-            _isConfirming = false;
-            _index = 0;
-            terminal.text = "_";
+            terminal.text = "";
             body.text += $"\n{action.text}";
             _confirm = action.confirm;
             _deny = action.deny;
@@ -62,7 +57,7 @@ namespace Coderman
 
         private void Done(bool accepted)
         {
-            terminal.text = "_";
+            terminal.text = "";
             body.text = "";
             canvas.enabled = false;
             Events.Instance.popUpStatus?.Invoke(false);
@@ -73,21 +68,13 @@ namespace Coderman
         {
             if (!canvas.enabled || ApplicationStatus.IsPaused) return;
 
-            if (key == clear)
-            {
-                _index = 0;
-                terminal.text = "_";
-                return;
-            }
-
-            if (_index == 0 && _confirm.Length > 0)
+            if (_index == 0)
                 _isConfirming = _deny?.Length == 0 || key == _confirm[_index];
 
             if (_isConfirming)
             {
                 if (_index >= _confirm.Length)
                 {
-                    if (key != submit) return;
                     if (++_currentPopUpIndex >= _currentPopUp.actions.Length)
                     {
                         Done(true);
@@ -95,31 +82,45 @@ namespace Coderman
                     }
 
                     SetInfo(_currentPopUp.actions[_currentPopUpIndex]);
-
                     return;
                 }
 
-                if (_confirm[_index] != key) return;
-
-                terminal.text = $"{terminal.text.Remove(terminal.text.Length - 1)}{_confirm[_index]}_";
-                if (++_index >= _confirm.Length)
-                    terminal.text = $"{terminal.text.Remove(terminal.text.Length - 1)} <sprite=12 color=#FFDF00>";
+                if (_confirm[_index] == key)
+                {
+                    terminal.text += _confirm[_index].ToString();
+                    _index++;
+                }
+                else
+                {
+                    _index = 0;
+                    terminal.text = "";
+                }
 
                 return;
             }
 
             if (_index >= _deny.Length)
             {
-                if (key != submit) return;
+                if (++_currentPopUpIndex >= _currentPopUp.actions.Length)
+                {
+                    Done(false);
+                    return;
+                }
 
-                Done(false);
+                SetInfo(_currentPopUp.actions[_currentPopUpIndex]);
                 return;
             }
 
-            if (_deny[_index] != key) return;
-            terminal.text = $"{terminal.text.Remove(terminal.text.Length - 1)}{_deny[_index]}_";
-            if (++_index >= _deny.Length)
-                terminal.text = $"{terminal.text.Remove(terminal.text.Length - 1)} <sprite=12 color=#FFDF00>";
+            if (_deny[_index] == key)
+            {
+                terminal.text += _deny[_index].ToString();
+                _index++;
+            }
+            else
+            {
+                _index = 0;
+                terminal.text = "";
+            }
         }
     }
 }
