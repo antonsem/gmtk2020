@@ -4526,7 +4526,7 @@ MonoBehaviour:
         [OK]
 
         ====='
-      confirm: 6b000000
+      confirm: 6f0000006b000000
       deny: 
     acceptTimer: 1
     closeTimer: 1
